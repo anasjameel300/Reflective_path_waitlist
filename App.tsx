@@ -1,5 +1,5 @@
 import React from 'react';
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/next"
 import { PhoneMockup } from './components/PhoneMockup';
 import { LandingForm } from './components/LandingForm';
 import { HomeView } from './components/HomeView';
