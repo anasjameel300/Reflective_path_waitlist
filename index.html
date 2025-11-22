@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Reflective Path</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #09090b; /* zinc-950 */
+        color: #e4e4e7; /* zinc-200 */
+      }
+      h1, h2, h3, .serif {
+        font-family: 'Playfair Display', serif;
+      }
+      
+      /* Custom Scrollbar Hide */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      /* Breathing Glow Animation */
+      @keyframes breathe {
+        0%, 100% {
+          box-shadow: 0 0 20px -10px rgba(141, 163, 145, 0.1);
+          border-color: rgba(39, 39, 42, 0.5); /* zinc-800 */
+        }
+        50% {
+          box-shadow: 0 0 30px -5px rgba(141, 163, 145, 0.25);
+          border-color: rgba(141, 163, 145, 0.4);
+        }
+      }
+
+      .animate-breathe {
+        animation: breathe 4s ease-in-out infinite;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
