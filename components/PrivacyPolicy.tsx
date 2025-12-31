@@ -19,121 +19,166 @@ export function PrivacyPolicy() {
                 </div>
 
                 {/* Title */}
-                <h1 className="text-4xl md:text-5xl serif text-zinc-100 mb-4">Privacy Policy</h1>
-                <p className="text-zinc-500 mb-12">Last Updated: {new Date().toLocaleDateString()}</p>
+                <h1 className="text-4xl md:text-5xl serif text-zinc-100 mb-2">Privacy Policy</h1>
+                <p className="text-zinc-500 mb-8">Reflective Path - Local-First Edition • Version 2.0.0</p>
+                <p className="text-zinc-500 mb-12">Last Updated: December 31, 2024</p>
 
                 {/* Content */}
-                <div className="space-y-12 text-zinc-300 leading-relaxed">
+                <div className="space-y-10 text-zinc-300 leading-relaxed">
 
                     <section>
-                        <h2 className="text-2xl serif text-zinc-100 mb-4">1. Introduction</h2>
+                        <h2 className="text-2xl serif text-zinc-100 mb-4">Overview</h2>
                         <p className="text-zinc-400">
-                            Welcome to Reflective Path ("we," "our," or "us"). We are committed to protecting your privacy and ensuring you have a positive experience on our mobile application. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our application.
+                            Reflective Path is a mindful productivity app designed to help you focus on a single meaningful goal.
+                            This version (2.0.0) is a completely local-first application — your data never leaves your device.
                         </p>
                     </section>
 
                     <section>
-                        <h2 className="text-2xl serif text-zinc-100 mb-4">2. Information We Collect</h2>
+                        <h2 className="text-2xl serif text-zinc-100 mb-4">Data We Collect</h2>
+                        <p className="text-zinc-200 font-medium mb-2">Short Answer: None.</p>
+                        <p className="text-zinc-400">
+                            Reflective Path does not collect, transmit, or store any of your data on external servers.
+                        </p>
+                    </section>
 
-                        <div className="space-y-6">
-                            <div>
-                                <h3 className="text-lg font-medium text-zinc-200 mb-2">A. Personal Information</h3>
-                                <p className="text-zinc-400 mb-2">
-                                    When you sign in to Reflective Path, we collect authentication information provided by Google Sign-In and managed via Supabase. This may include:
-                                </p>
-                                <ul className="list-disc list-inside text-zinc-400 ml-4 space-y-1">
-                                    <li>User ID</li>
-                                    <li>Email address</li>
-                                    <li>Profile information (name, avatar)</li>
-                                </ul>
-                            </div>
+                    <section>
+                        <h2 className="text-2xl serif text-zinc-100 mb-4">What Stays on Your Device</h2>
+                        <p className="text-zinc-400 mb-4">All of the following data is stored locally on your device only:</p>
+                        <ul className="list-disc list-inside text-zinc-400 ml-4 space-y-1">
+                            <li>Your goal</li>
+                            <li>Your strategies (plans)</li>
+                            <li>Your milestones and support tasks</li>
+                            <li>Your daily progress logs</li>
+                            <li>Your reflections</li>
+                            <li>Your username (if you choose to set one)</li>
+                            <li>Notification preferences</li>
+                        </ul>
+                        <p className="text-zinc-400 mt-3">
+                            This data is stored using your device's local storage and is never transmitted to any server.
+                        </p>
+                    </section>
 
-                            <div>
-                                <h3 className="text-lg font-medium text-zinc-200 mb-2">B. User Content</h3>
-                                <p className="text-zinc-400 mb-2">
-                                    We collect the data you explicitly create within the app to provide the core functionality of tracking your goals and progress. This includes:
-                                </p>
-                                <ul className="list-disc list-inside text-zinc-400 ml-4 space-y-1">
-                                    <li>Goals and Plans: Titles, start/end dates, and status.</li>
-                                    <li>Tasks: Titles, types, completion status, and repeatability.</li>
-                                    <li>Reflections and Logs: Daily logs, milestone achievements, and written reflections.</li>
-                                </ul>
-                            </div>
+                    <section>
+                        <h2 className="text-2xl serif text-zinc-100 mb-4">Third-Party Services</h2>
 
-                            <div>
-                                <h3 className="text-lg font-medium text-zinc-200 mb-2">C. Usage and Device Data</h3>
-                                <p className="text-zinc-400 mb-2">
-                                    We use third-party tools to help us improve the app and identify bugs.
-                                </p>
-                                <ul className="list-disc list-inside text-zinc-400 ml-4 space-y-2">
-                                    <li><span className="text-zinc-200">PostHog:</span> We use PostHog to track anonymous usage events (e.g., "Plan Created", "Task Completed") to understand how users interact with the app.</li>
-                                    <li><span className="text-zinc-200">Sentry:</span> We use Sentry to collect crash reports and performance data to help us fix bugs and improve stability.</li>
-                                    <li><span className="text-zinc-200">Device Information:</span> We may collect information about your device model, operating system version, and unique device identifiers for analytics and debugging purposes.</li>
-                                </ul>
-                            </div>
+                        <div className="mb-4">
+                            <p className="text-zinc-400 mb-2">We Do Not Use:</p>
+                            <ul className="list-none text-zinc-400 ml-0 space-y-1">
+                                <li>❌ Analytics — We do not track how you use the app</li>
+                                <li>❌ Cloud databases — Your data is not stored in the cloud</li>
+                                <li>❌ Authentication services — No account required</li>
+                                <li>❌ Advertising — No ads, no ad tracking</li>
+                                <li>❌ Error tracking — No crash reports are sent externally</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p className="text-zinc-400 mb-2">We Do Use:</p>
+                            <ul className="list-none text-zinc-400 ml-0 space-y-1">
+                                <li>✅ Local notifications — Only if you enable them, to remind you about your daily tasks. These are handled entirely by your device's operating system.</li>
+                            </ul>
                         </div>
                     </section>
 
                     <section>
-                        <h2 className="text-2xl serif text-zinc-100 mb-4">3. How We Use Your Information</h2>
-                        <p className="text-zinc-400 mb-4">We use the collected information for the following purposes:</p>
-                        <ul className="list-disc list-inside text-zinc-400 ml-4 space-y-2">
-                            <li><span className="text-zinc-200">Service Provision:</span> To store and sync your goals, plans, and tasks across devices using Supabase.</li>
-                            <li><span className="text-zinc-200">Authentication:</span> To verify your identity and manage your account.</li>
-                            <li><span className="text-zinc-200">Notifications:</span> To send you reminders and nudges for your tasks (if you grant permission).</li>
-                            <li><span className="text-zinc-200">Improvement:</span> To analyze usage patterns and fix technical issues using PostHog and Sentry.</li>
-                        </ul>
-                    </section>
-
-                    <section>
-                        <h2 className="text-2xl serif text-zinc-100 mb-4">4. Data Storage and Security</h2>
-                        <ul className="list-disc list-inside text-zinc-400 ml-4 space-y-2">
-                            <li><span className="text-zinc-200">Cloud Storage:</span> Your data is securely stored in the cloud using Supabase, a backend-as-a-service platform.</li>
-                            <li><span className="text-zinc-200">Local Storage:</span> We also store a copy of your data locally on your device using AsyncStorage for offline access and performance.</li>
-                            <li><span className="text-zinc-200">Security:</span> We implement reasonable security measures to protect your information. However, please be aware that no method of transmission over the internet or electronic storage is 100% secure.</li>
-                        </ul>
-                    </section>
-
-                    <section>
-                        <h2 className="text-2xl serif text-zinc-100 mb-4">5. Third-Party Services</h2>
-                        <p className="text-zinc-400 mb-4">We may share data with the following third-party service providers solely for the purpose of operating and improving the app:</p>
-                        <ul className="list-disc list-inside text-zinc-400 ml-4 space-y-1">
-                            <li>Supabase: For database, authentication, and backend services.</li>
-                            <li>Google: For authentication services.</li>
-                            <li>PostHog: For product analytics.</li>
-                            <li>Sentry: For error tracking and performance monitoring.</li>
-                        </ul>
-                    </section>
-
-                    <section>
-                        <h2 className="text-2xl serif text-zinc-100 mb-4">6. Your Rights and Data Control</h2>
-                        <ul className="list-disc list-inside text-zinc-400 ml-4 space-y-2">
-                            <li><span className="text-zinc-200">Account Deletion:</span> You can delete your account and all associated data directly within the app settings. This action will permanently remove your data from our servers (Supabase) and your local device.</li>
-                            <li><span className="text-zinc-200">Data Access:</span> You access your data simply by using the application.</li>
-                        </ul>
-                    </section>
-
-                    <section>
-                        <h2 className="text-2xl serif text-zinc-100 mb-4">7. Children's Privacy</h2>
+                        <h2 className="text-2xl serif text-zinc-100 mb-4">Data Sharing</h2>
                         <p className="text-zinc-400">
-                            Reflective Path is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13.
-                        </p>
-                    </section>
-
-                    <section>
-                        <h2 className="text-2xl serif text-zinc-100 mb-4">8. Changes to This Privacy Policy</h2>
-                        <p className="text-zinc-400">
-                            We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last Updated" date at the top of this policy.
-                        </p>
-                    </section>
-
-                    <section>
-                        <h2 className="text-2xl serif text-zinc-100 mb-4">9. Contact Us</h2>
-                        <p className="text-zinc-400">
-                            If you have any questions or concerns about this Privacy Policy, please contact us at: <a href="mailto:jameelanas00@gmail.com" className="text-[#8da391] hover:underline">jameelanas00@gmail.com</a>
+                            We do not share your data with anyone. Period.
                         </p>
                         <p className="text-zinc-400 mt-2">
-                            You can also reach us on X (formerly Twitter): <a href="https://x.com/AnasJameel300" target="_blank" rel="noopener noreferrer" className="text-[#8da391] hover:underline">@AnasJameel300</a>
+                            Since all data is stored locally on your device, there is nothing to share.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 className="text-2xl serif text-zinc-100 mb-4">Data Retention</h2>
+                        <p className="text-zinc-400 mb-3">
+                            Your data persists on your device until:
+                        </p>
+                        <ul className="list-disc list-inside text-zinc-400 ml-4 space-y-1">
+                            <li>You choose to reset your data within the app</li>
+                            <li>You uninstall the app</li>
+                            <li>You clear the app's data through your device settings</li>
+                        </ul>
+                        <p className="text-zinc-400 mt-3">
+                            We have no control over your data and cannot access, recover, or delete it remotely.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 className="text-2xl serif text-zinc-100 mb-4">Children's Privacy</h2>
+                        <p className="text-zinc-400">
+                            Reflective Path does not collect any personal information from anyone, including children under 13.
+                            The app contains no accounts, no tracking, and no data collection of any kind.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 className="text-2xl serif text-zinc-100 mb-4">Your Rights</h2>
+                        <p className="text-zinc-400 mb-3">
+                            Since we don't collect your data, traditional data rights (access, deletion, portability) are handled entirely by you on your device:
+                        </p>
+                        <ul className="list-disc list-inside text-zinc-400 ml-4 space-y-1">
+                            <li><span className="text-zinc-200">Access:</span> Open the app to see all your data</li>
+                            <li><span className="text-zinc-200">Delete:</span> Use the "Reset Data" feature or uninstall the app</li>
+                            <li><span className="text-zinc-200">Export:</span> Your data lives in your device's app storage</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 className="text-2xl serif text-zinc-100 mb-4">Changes to This Policy</h2>
+                        <p className="text-zinc-400">
+                            If we update this privacy policy, we will update the "Last Updated" date above. Significant changes will be noted in app update release notes.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 className="text-2xl serif text-zinc-100 mb-4">Contact Us</h2>
+                        <p className="text-zinc-400">
+                            If you have questions about this privacy policy or the app, you can reach us at:
+                        </p>
+                        <p className="text-[#8da391] hover:underline mt-2">
+                            <a href="mailto:jameelanas00@gmail.com" className="text-[#8da391] hover:underline">jameelanas00@gmail.com</a>
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 className="text-2xl serif text-zinc-100 mb-4">Summary</h2>
+
+                        <div className="overflow-x-auto bg-zinc-900 p-4 rounded-md">
+                            <table className="w-full text-left text-zinc-300">
+                                <tbody>
+                                    <tr>
+                                        <td className="py-2 font-medium text-zinc-200 w-1/2">Do you collect my data?</td>
+                                        <td className="py-2">No</td>
+                                    </tr>
+                                    <tr className="border-t border-zinc-800">
+                                        <td className="py-2 font-medium text-zinc-200">Is my data sent to the cloud?</td>
+                                        <td className="py-2">No</td>
+                                    </tr>
+                                    <tr className="border-t border-zinc-800">
+                                        <td className="py-2 font-medium text-zinc-200">Do you use analytics?</td>
+                                        <td className="py-2">No</td>
+                                    </tr>
+                                    <tr className="border-t border-zinc-800">
+                                        <td className="py-2 font-medium text-zinc-200">Do you show ads?</td>
+                                        <td className="py-2">No</td>
+                                    </tr>
+                                    <tr className="border-t border-zinc-800">
+                                        <td className="py-2 font-medium text-zinc-200">Can you see my goals?</td>
+                                        <td className="py-2">No</td>
+                                    </tr>
+                                    <tr className="border-t border-zinc-800">
+                                        <td className="py-2 font-medium text-zinc-200">Where is my data stored?</td>
+                                        <td className="py-2">Only on your device</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p className="text-zinc-400 mt-4">
+                            Reflective Path is built with a simple belief: your journey is yours alone. We respect that by keeping everything local, private, and under your control.
                         </p>
                     </section>
 
